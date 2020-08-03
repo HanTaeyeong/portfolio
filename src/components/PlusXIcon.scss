@@ -1,0 +1,92 @@
+.navTrigger {
+  background: gray;
+  margin: 10rem;
+  cursor: pointer;
+  width: 20rem;
+  height: 20rem;
+  position: relative;
+
+  .icon {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: black;
+    border-radius: 2px;
+    width: 10rem;
+    height: 0.2rem;
+    
+    &:nth-child(1){
+        transform: translate(-50%, -50%) rotate(90deg);
+    }
+    &:nth-child(2){
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+  }
+
+  &.deActive {
+    .icon:nth-child(1) {
+      animation: firstIconMoveReverse 1s ease-in-out both;
+    }
+    .icon:nth-child(2) {
+      animation: secondIconMoveReverse 1s ease-in-out both;
+    }
+  }
+  &.active {
+    .icon:nth-child(1) {
+      animation: firstIconMove 1s ease-in-out both;
+    }
+    .icon:nth-child(2) {
+      animation: secondIconMove 1s ease-in-out both;
+    }
+  }
+}
+
+@keyframes firstIconMove {
+  50% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  60% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+}
+
+@keyframes secondIconMove {
+  50% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  60% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
+}
+
+@keyframes firstIconMoveReverse {
+  50% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  60% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(90deg);
+  }
+}
+
+@keyframes secondIconMoveReverse {
+  50% {
+    transform: translate(-50%, -50%) rotate(180deg);
+  }
+  60% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+}
