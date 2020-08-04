@@ -1,9 +1,11 @@
+$menuicon-width:5rem;
+$menuicon-height:5rem;
+
 .navTrigger {
-  background: gray;
-  margin: 10rem;
+  background: transparent;
   cursor: pointer;
-  width: 20rem;
-  height: 20rem;
+  width: $menuicon-width;
+  height: $menuicon-height;
   position: relative;
 
   .icon {
@@ -13,8 +15,8 @@
     transform: translate(-50%, -50%);
     background-color: black;
     border-radius: 2px;
-    width: 10rem;
-    height: 0.2rem;
+    width: $menuicon-width/2;
+    height: $menuicon-height/20;
     
     &:nth-child(1){
         transform: translate(-50%, -50%) rotate(90deg);
@@ -27,18 +29,18 @@
 
   &.deActive {
     .icon:nth-child(1) {
-      animation: firstIconMoveReverse 1s ease-in-out both;
+      animation: firstIconMoveReverse 0.5s ease-in-out both;
     }
     .icon:nth-child(2) {
-      animation: secondIconMoveReverse 1s ease-in-out both;
+      animation: secondIconMoveReverse 0.5s ease-in-out both;
     }
   }
   &.active {
     .icon:nth-child(1) {
-      animation: firstIconMove 1s ease-in-out both;
+      animation: firstIconMove 0.66s ease-in-out both;
     }
     .icon:nth-child(2) {
-      animation: secondIconMove 1s ease-in-out both;
+      animation: secondIconMove 0.66s ease-in-out both;
     }
   }
 }
@@ -68,10 +70,10 @@
 }
 
 @keyframes firstIconMoveReverse {
-  50% {
-    transform: translate(-50%, -50%) rotate(0deg);
+  0% {
+    transform: translate(-50%, -50%) rotate(45deg);
   }
-  60% {
+  50% {
     transform: translate(-50%, -50%) rotate(0deg);
   }
   100% {
@@ -80,10 +82,10 @@
 }
 
 @keyframes secondIconMoveReverse {
-  50% {
-    transform: translate(-50%, -50%) rotate(-90deg);
+  0% {
+    transform: translate(-50%, -50%) rotate(-45deg);
   }
-  60% {
+  50% {
     transform: translate(-50%, -50%) rotate(0deg);
   }
   100% {
