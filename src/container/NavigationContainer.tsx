@@ -8,20 +8,22 @@ import PlusXIcon from '../components/PlusXIcon';
 const NavBox = styled.div`
 display:flex;
 flex-direction:column;
-width:20rem;
-background:red;
+width:15rem;
+z-index:9;
 `;
 
 
 const NavigationContainer = () => {
     const [active, setActive] = useState(true);
+    const [currentPage, setCurrentPage] = useState("intro");
+
 
     return <NavBox>
         <PlusXIcon active={active} onClickFunction={() => { setActive(!active) }} />
-        <NavButton to="intro" active={active} title="Intro" />
-        <NavButton to="stack" active={active} title="Stack" />
-        <NavButton to="career" active={active} title="Career" />
-        <NavButton to="contact" active={active} title="Contact" />
+        <NavButton to="intro" active={active} selected={currentPage==="intro"} title="Intro" onClickFunction={() => setCurrentPage("intro")} />
+        <NavButton to="stack" active={active} selected={currentPage==="stack"} title="Stack" onClickFunction={() => setCurrentPage("stack")} />
+        <NavButton to="career" active={active} selected={currentPage==="career"} title="Career" onClickFunction={() => setCurrentPage("career")} />
+        <NavButton to="contact" active={active} selected={currentPage==="contact"} title="Contact" onClickFunction={() => setCurrentPage("contact")} />
     </NavBox>
 
 }

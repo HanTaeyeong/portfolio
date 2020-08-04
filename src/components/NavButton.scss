@@ -3,12 +3,14 @@
   margin: 1rem;
   display: flex;
   font-size: 5rem;
-  -webkit-text-stroke: 2px black;
+  -webkit-text-stroke: 2px rgba(0, 0, 0, 0.719);
   color: white;
   font-weight: 600;
   transition: 0.33s;
   text-decoration: none;
   
+  letter-spacing: normal;
+
   // .input-line {
   //   width: calc(100% - 50px);
   //   margin-left: 25px;
@@ -39,7 +41,9 @@
 
 
   &:hover {
-    color: black;
+    color: #000000c2;
+    letter-spacing: 2px;
+
   }
   &.active {
     margin-left: 2rem;
@@ -47,4 +51,14 @@
   &.deActive {
       margin-left:-20rem;
   }
+  
+  &.selected{
+    color: black;
+    letter-spacing: 2px;
+  }
+
+  &.unselected{
+
+  }
+
 }
