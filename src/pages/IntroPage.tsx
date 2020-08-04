@@ -5,7 +5,7 @@ import React from 'react';
 
 const IntroPage=()=>{
 
-    return <div></div>
+    return <div>IntroPage</div>
 }
 
 export default IntroPage;

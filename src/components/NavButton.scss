@@ -7,6 +7,36 @@
   color: white;
   font-weight: 600;
   transition: 0.33s;
+  text-decoration: none;
+  
+  // .input-line {
+  //   width: calc(100% - 50px);
+  //   margin-left: 25px;
+  //   height: 2px;
+
+  //   path {
+  //     stroke-width: 1.5px;
+  //     stroke: lightgray;
+  //     opacity: 0.25;
+  //     transition: all 0.2s;
+  //     stroke-dasharray: 0, 20;
+  //     stroke-dashoffset: -20;
+
+  //     &.active {
+  //       opacity: 0.33;
+  //       stroke-dasharray: 40, 0;
+  //       stroke-dashoffset: 0;
+  //     }
+  //   }
+  // }
+
+  .svg{
+    margin:0;
+    .path{
+      margin:0;
+    }
+  }
+
 
   &:hover {
     color: black;
