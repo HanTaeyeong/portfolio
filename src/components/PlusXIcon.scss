@@ -1,5 +1,5 @@
-$menuicon-width:5rem;
-$menuicon-height:5rem;
+$menuicon-width:10rem;
+$menuicon-height:10rem;
 
 .navTrigger {
   background: transparent;
@@ -9,12 +9,13 @@ $menuicon-height:5rem;
   position: relative;
 
   .icon {
+    
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
     background-color: black;
-    border-radius: 2px;
+    border-radius: 10px;
     width: $menuicon-width/2;
     height: $menuicon-height/20;
     

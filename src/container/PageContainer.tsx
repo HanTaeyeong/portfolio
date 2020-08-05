@@ -7,6 +7,7 @@ const PageBox=styled.div`
 display:flex;
 width:calc(90% - 20rem);
 background:yellow;
+margin-left:20rem;
 `;
 
 const PageContainer = () => {

@@ -6,12 +6,12 @@ import PlusXIcon from '../components/PlusXIcon';
 
 
 const NavBox = styled.div`
-display:flex;
+
+position:fixed;
 flex-direction:column;
 width:15rem;
 z-index:9;
 `;
-
 
 const NavigationContainer = () => {
     const [active, setActive] = useState(true);
