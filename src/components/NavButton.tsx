@@ -8,23 +8,15 @@ const Nav = styled(Link)`
     display:block;
     width:23rem;
     text-align:left;
-    
-
 `;
 
-// <svg viewBox="0 0 40 2" preserveAspectRatio="none" className="svg">
-// <path d="M0 1 L40 1" className="path" />
-// </svg>
 
 type NavButtonType = { title: String, active: boolean, to: string, onClickFunction: Function, selected: boolean }
 
 
 const NavButton = ({ title, active, to, onClickFunction, selected }: NavButtonType) => {
-
-
-    return <Nav to={`/${to}`} className={`nav-button ${active ? "active" : "deActive"}${selected?" selected":" unselected"}`} onClick={() => onClickFunction()}>{title}
+    return <Nav to={`/${to}`} className={`nav-button ${active ? "active" : "deActive"}${selected ? " selected" : " unselected"}`} onClick={() => onClickFunction()}>{title}
     </Nav>
-
 }
 
 export default NavButton;

@@ -8,7 +8,7 @@
   font-weight: 600;
   transition: 0.33s;
   text-decoration: none;
-  
+
   letter-spacing: normal;
 
   // .input-line {
@@ -16,49 +16,39 @@
   //   margin-left: 25px;
   //   height: 2px;
 
-  //   path {
-  //     stroke-width: 1.5px;
-  //     stroke: lightgray;
-  //     opacity: 0.25;
-  //     transition: all 0.2s;
-  //     stroke-dasharray: 0, 20;
-  //     stroke-dashoffset: -20;
+    // path {
+    //   margin: 0;
+    //   stroke-width: 1.5px;
+    //   stroke: rgb(0, 0, 0);
+    //   opacity: 0.25;
+    //   transition: all 0.2s;
+    //   stroke-dasharray: 0, 20;
+    //   stroke-dashoffset: -20;
 
-  //     &.active {
-  //       opacity: 0.33;
-  //       stroke-dasharray: 40, 0;
-  //       stroke-dashoffset: 0;
-  //     }
-  //   }
-  // }
-
-  .svg{
-    margin:0;
-    .path{
-      margin:0;
-    }
-  }
-
-
-  &:hover {
-    color: #000000c2;
-    letter-spacing: 2px;
-
-  }
+    //   &.active {
+    //     opacity: 0.33;
+    //     stroke-dasharray: 40, 0;
+    //     stroke-dashoffset: 0;
+    //   }
+    // }
+  
   &.active {
     margin-left: 2rem;
   }
   &.deActive {
-      margin-left:-20rem;
+    margin-left: -25rem;
   }
-  
-  &.selected{
+
+  &:hover {
+    color: #000000c2;
+    letter-spacing: 2px;
+  }
+
+  &.selected {
     color: black;
     letter-spacing: 2px;
   }
 
-  &.unselected{
-
+  &.unselected {
   }
-
 }
