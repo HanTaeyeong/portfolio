@@ -6,7 +6,7 @@ import "./components/PlusXIcon";
 import NavigationContainer from "./container/NavigationContainer";
 import PageContainer from "./container/PageContainer";
 import { Route, BrowserRouter } from "react-router-dom";
-import { LifeStoryPage, ContactPage, IntroPage, StackPage } from "./pages";
+import { CareerPage, ContactPage, IntroPage, StackPage } from "./pages";
 
 const Header = styled.div`
   width: 100%;

@@ -1,12 +1,14 @@
 import React from 'react';
+import FadeInLetters from "../components/Letters/FadeInLetters";
+
 
 const ContactPage =()=>{
     
-    return <div>
+    return <FadeInLetters>
         ContactPage
         Email
         Phone
-    </div>
+        </FadeInLetters>
 }
 
 export default ContactPage;
