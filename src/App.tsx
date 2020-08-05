@@ -12,7 +12,7 @@ function App() {
   return (
     <BrowserRouter>
     <div className="App">
-         <div style={{width:"100%",fontSize:"5rem", display:"block"}}>HanTaeyeong</div>
+         <div style={{width:"100%",fontSize:"5rem", display:"block",margin:"2rem"}}>HanTaeyeong</div>
         <NavigationContainer />
         <PageContainer />
 

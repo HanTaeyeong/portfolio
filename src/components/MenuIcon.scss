@@ -26,6 +26,10 @@
     -webkit-animation-direction: reverse;
     animation-direction: reverse;
   }
+  &::nth-child(n){
+    font-size:n;
+}
+
   i:nth-child(2) {
     margin: 5px 0;
     -webkit-animation: outM 0.8s backwards;
