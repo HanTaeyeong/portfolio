@@ -4,7 +4,7 @@ import FadeInLetters from "../components/Letters/FadeInLetters";
 
 const ContactPage =()=>{
     
-    return <FadeInLetters>
+    return <FadeInLetters animated={true}>
         ContactPage
         Email
         Phone

@@ -10,9 +10,8 @@ margin-left:3rem;
 font-size:3rem;
 margin-bottom:20rem;
 text-align:left;
-opacity:0;
+opacity:0.1;
 margin-top:1rem;
-animation: fade-in-animation 0.66s ease-in-out 0.05s both;
 
 @keyframes fade-in-animation{
     0%{
@@ -25,14 +24,22 @@ margin-top:0rem;
     }
 }
 
+    &.animated{
+
+        animation: fade-in-animation 0.66s ease-in-out 0.05s both;
+
+    }
+
+
 `;
 
-type MyProps={
+type MyProps = {
+animated:boolean
 }
 
-const FadeInLetter:React.FunctionComponent<MyProps>=(props)=>{
+const FadeInLetter: React.FunctionComponent<MyProps> = (props) => {
 
-return <LetterWrapper>{props.children}</LetterWrapper>
+    return <LetterWrapper className={props.animated?"animated":""}>{props.children}</LetterWrapper>
 
 }
 

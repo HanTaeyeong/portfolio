@@ -12,7 +12,7 @@ const WaveLettersWrapper = styled.span`
 
 const WaveLetter = styled.span`
 
-   color:red;
+   color:lightblue;
     display:inline-block;
    
     @keyframes wave{ 
@@ -52,7 +52,7 @@ const WaveLetters: FunctionComponent<MyProps> = (props) => {
 
             const thisAnim = `wave 1.66s ease-in-out ${0.5 + (index + 1) * 0.15}s infinite`;
 
-            return <WaveLetter style={{ animation: thisAnim }}>{letter}</WaveLetter>
+            return <WaveLetter style={{ animation: thisAnim }} key={index}>{letter}</WaveLetter>
         })}
 
     </WaveLettersWrapper>

@@ -11,9 +11,10 @@ margin-left:20rem;
 `;
 
 const PageContainer = () => {
+
     return (
         <PageBox>
-            <Route path={["/intro", "/"]} exact={true} component={IntroPage} />
+            <Route path={["/intro", "/"]} exact={true} component={IntroPage}/>
             <Route path="/stack" component={StackPage} />
             <Route path="/career" component={CareerPage} />
             <Route path="/contact" component={ContactPage} />
