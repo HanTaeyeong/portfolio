@@ -38,23 +38,28 @@ const StackPage = () => {
     return <div>
         <FadeInLetters animated={activated[0]}>
             저는 리엑트를 주로 사용하며, 주로 함수형 컴포넌트를 선호합니다. 
+            <br/><br/>
             ES6++의 최신 자바스크립트를 사용합니다.
+            <br/><br/>
             정적 타입체크로 타입스크립트를 사용하고,
+            <br/><br/>
             상황에 따라 SCSS, CSS, styled-components를 사용합니다.
         </FadeInLetters >
 
         <FadeInLetters animated={activated[1]}>
-            Micro-Interaction에는 주로 svg와 css를 적절히 결합한 애니메이션을 사용하며,
+            Micro-Interaction에는 주로 svg와 css를 
+            <br/><br/>적절히 결합한 애니메이션을 사용하며,
+            <br/><br/>
             svg 파일을 만들 때 Adobe Illutrator를 사용하기도 합니다.
         </FadeInLetters>
 
         <FadeInLetters animated={activated[2]}>
-            정적 서버로는 AWS S3를 사용합니다.
+            정적 서버로는 AWS S3를 사용합니다.<br/><br/>
             RESTful api 방식을 통하여 데이터를 주고 받습니다.
         </FadeInLetters>
 
         <FadeInLetters animated={activated[3]}>
-            버전 관리는 깃을 사용하고,
+            버전 관리는 깃을 사용하고,<br/><br/>
             협업 도구로는 깃헙과 깃랩을 사용합니다.
         </FadeInLetters>
 

@@ -1,8 +1,8 @@
-import React, { useRef, useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import "./App.css";
 import "./components/PlusXIcon";
-
+import $ from 'jquery';
 
 import NavigationContainer from "./container/NavigationContainer";
 import PageContainer from "./container/PageContainer";
@@ -18,15 +18,31 @@ const Header = styled.div`
 
 function App() {
 
+  const [active, setActive] = useState(false);
+  const [currentY, setCurrentY] = useState(0);
 
-  
+  const toggleNavActive = () => {
+    setActive(!active);
+  }
+
+
+
+
+
+  useEffect(() => {
+
+
+  }, []);
+
+
+
 
   return (
     <BrowserRouter>
       <div className="App">
         <Header>HanTaeyeong</Header>
-        <NavigationContainer />
-        <PageContainer/>
+        <NavigationContainer active={active} toggleNavActive={toggleNavActive} />
+        <PageContainer />
       </div>
     </BrowserRouter>
   );

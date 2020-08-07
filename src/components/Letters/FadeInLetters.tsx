@@ -4,13 +4,12 @@ import styled from 'styled-components';
 
 
 const LetterWrapper = styled.div`
-width:100%;
+width:200%;
 height:70vh;
-margin-left:3rem;
+margin-left:-50%;
 font-size:3rem;
-text-align:left;
-align-items:center;
-justify-content:center;
+text-align:center;
+
 opacity:0.1;
 margin-top:1rem;
 transition:0.66s;
@@ -32,12 +31,13 @@ transition:0.66s;
 `;
 
 type MyProps = {
-    animated: boolean
+    animated: boolean,
+    background?:string,
 }
 
 const FadeInLetter: React.FunctionComponent<MyProps> = (props) => {
 
-    return <LetterWrapper className={props.animated ? "animated" : ""}>{props.children}</LetterWrapper>
+    return <LetterWrapper className={props.animated ? "animated" : ""} style={{background:`${props.background}`}}>{props.children}</LetterWrapper>
 
 }
 

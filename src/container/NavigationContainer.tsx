@@ -12,13 +12,18 @@ width:15rem;
 z-index:9;
 `;
 
-const NavigationContainer = () => {
-    const [active, setActive] = useState(true);
+type NavContainerType={
+active:boolean,
+toggleNavActive:Function,
+}
+
+const NavigationContainer = ({active,toggleNavActive}:NavContainerType) => {
+   
     const [currentPage, setCurrentPage] = useState("intro");
 
 
     return <NavBox>
-        <PlusXIcon active={active} onClickFunction={() => { setActive(!active) }} />
+        <PlusXIcon active={active} onClickFunction={() => { toggleNavActive(); }} />
         <NavButton to="intro" active={active} selected={currentPage==="intro"} title="Intro" onClickFunction={() => setCurrentPage("intro")} />
         <NavButton to="stack" active={active} selected={currentPage==="stack"} title="Stack" onClickFunction={() => setCurrentPage("stack")} />
         <NavButton to="career" active={active} selected={currentPage==="career"} title="Career" onClickFunction={() => setCurrentPage("career")} />
