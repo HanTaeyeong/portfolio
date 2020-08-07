@@ -50,7 +50,7 @@ const WaveLetters: FunctionComponent<MyProps> = (props) => {
     return <WaveLettersWrapper>
         {letters.map((letter, index) => {
 
-            const thisAnim = `wave 1.66s ease-in-out ${0.5 + (index + 1) * 0.15}s infinite`;
+            const thisAnim = `wave 1s ease-in-out ${0.5 + (index + 1) * 0.15}s infinite`;
 
             return <WaveLetter style={{ animation: thisAnim }} key={index}>{letter}</WaveLetter>
         })}

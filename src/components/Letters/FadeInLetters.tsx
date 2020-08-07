@@ -5,41 +5,39 @@ import styled from 'styled-components';
 
 const LetterWrapper = styled.div`
 width:100%;
-
+height:70vh;
 margin-left:3rem;
 font-size:3rem;
-margin-bottom:20rem;
 text-align:left;
+align-items:center;
+justify-content:center;
 opacity:0.1;
 margin-top:1rem;
+transition:0.66s;
 
-@keyframes fade-in-animation{
-    0%{
-        opacity:0;
-    }
-    100%{
+
+    
+    &.animated{
+        transition:0.66s;
         opacity:1;
         
-margin-top:0rem;
-    }
-}
-
-    &.animated{
-
-        animation: fade-in-animation 0.66s ease-in-out 0.05s both;
+        margin-top:0rem;
 
     }
+    
+    
+
 
 
 `;
 
 type MyProps = {
-animated:boolean
+    animated: boolean
 }
 
 const FadeInLetter: React.FunctionComponent<MyProps> = (props) => {
 
-    return <LetterWrapper className={props.animated?"animated":""}>{props.children}</LetterWrapper>
+    return <LetterWrapper className={props.animated ? "animated" : ""}>{props.children}</LetterWrapper>
 
 }
 

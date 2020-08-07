@@ -19,18 +19,7 @@ const Header = styled.div`
 function App() {
 
 
-  const [scrollY, setScrollY] = useState(0);
-  const [innerHeight, setInnerHeight] = useState(0);
-
-
-  const onScroll = () => {
-    setScrollY(window.scrollY);
-    setInnerHeight(window.innerHeight);
-
-  };
-
-  useEffect(() => { window.addEventListener('scroll', onScroll); }, []);
-
+  
 
   return (
     <BrowserRouter>
