@@ -5,8 +5,8 @@ import { IntroPage, StackPage, CareerPage, ContactPage } from '../pages';
 
 const PageBox=styled.div`
 display:flex;
-width:calc(90% - 20rem);
-margin-left:20rem;
+width:100%;
+
 `;
 
 const PageContainer = () => {

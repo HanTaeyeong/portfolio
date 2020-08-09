@@ -4,16 +4,14 @@ import styled from 'styled-components';
 
 
 const LetterWrapper = styled.div`
-width:200%;
+width:130%;
 height:70vh;
-margin-left:-50%;
 font-size:3rem;
 text-align:center;
 
 opacity:0.1;
 margin-top:1rem;
 transition:0.66s;
-
 
     
     &.animated{

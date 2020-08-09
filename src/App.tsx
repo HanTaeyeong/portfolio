@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import "./App.css";
 import "./components/PlusXIcon";
-import $ from 'jquery';
+
 
 import NavigationContainer from "./container/NavigationContainer";
 import PageContainer from "./container/PageContainer";
@@ -18,8 +18,7 @@ const Header = styled.div`
 
 function App() {
 
-  const [active, setActive] = useState(false);
-  const [currentY, setCurrentY] = useState(0);
+  const [active, setActive] = useState(true);
 
   const toggleNavActive = () => {
     setActive(!active);
@@ -30,7 +29,17 @@ function App() {
 
 
   useEffect(() => {
+    window.addEventListener('scroll', ()=>{
+      console.log(window.scrollY);
+      
+      if(window.scrollY<=(window.innerHeight/10)){
+       
+      setActive(true);  
 
+      }else
+      {setActive(false);}  
+
+    })
 
   }, []);
 
