@@ -19,7 +19,7 @@ const Header = styled.div`
 function App() {
 
   const [active, setActive] = useState(true);
-
+  
   const toggleNavActive = () => {
     setActive(!active);
   }
@@ -30,7 +30,7 @@ function App() {
 
   useEffect(() => {
     window.addEventListener('scroll', ()=>{
-      console.log(window.scrollY);
+      
       
       if(window.scrollY<=(window.innerHeight/10)){
        
