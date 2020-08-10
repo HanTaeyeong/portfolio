@@ -1,5 +1,11 @@
 import React, { useEffect, useState } from "react";
 import FadeInLetters from "../components/Letters/FadeInLetters";
+import styled from 'styled-components';
+
+
+
+
+
 
 const CareerPage = () => {
 
@@ -38,10 +44,15 @@ const CareerPage = () => {
   return (
     <div>
       <FadeInLetters animated={activated[0]}>
+     
+        <br />
+        <br />
         <br />
        2014년 처음으로 프로그래밍을 하겠다고 마음을 먹은 이후
          <br /><br />
         공부를 시작하여 프로그래머의 삶을 살고 있습니다.
+
+
       </FadeInLetters>
 
       <FadeInLetters animated={activated[1]}>
@@ -65,9 +76,9 @@ const CareerPage = () => {
       </FadeInLetters>
       <FadeInLetters animated={activated[3]}>
         그 후 사용자들과 더 가깝고 개발자들간의 소통이 활발하며,<br /><br />
-        
+
         계속 변화하고 발전하는 프론트엔드 분야가<br /><br />
-        
+
         저랑 잘 맞는다고 느껴서
         <br /><br /> 프론트엔드 개발자로서의 길을 가기로 마음을
         먹었습니다.

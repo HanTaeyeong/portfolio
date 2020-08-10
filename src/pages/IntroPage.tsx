@@ -62,14 +62,19 @@ const IntroPage = () => {
     return <IntroWrapper>
 
         <FadeInLetter animated={activated[0]}>
-            <br/>
+         
+                <br />
+                <br />
+                <br />
+
             안녕하세요. 저는 프론트엔드 개발자 한태영입니다.
         <br />
-            <br />
-            <WaveLetters>
-                역동적인
+                <br />
+                <WaveLetters>
+                    역동적인
         </WaveLetters>
         &nbsp;프론트엔드 분야를 이끄는 사람이 되고 싶습니다.
+      
         </FadeInLetter>
 
         <FadeInLetter animated={activated[1]} background="orange">
@@ -77,10 +82,10 @@ const IntroPage = () => {
         문제가 있으면 꼭 해결하고 싶어합니다.
         </FadeInLetter>
         <FadeInLetter animated={activated[2]}>
-        <Image src={require('../images/staircase.png')} alt="https://images.app.goo.gl/PHAH66Bvn535Y6mTA" />
-        <br/>
+            <Image src={require('../images/staircase.png')} alt="https://images.app.goo.gl/PHAH66Bvn535Y6mTA" />
+            <br />
         저는 하루의 대부분을 컴퓨터 앞에서 보냅니다.
-           
+
          <br /><br />
         책을 좋아하여 나중에 멋진 서재를 가지고 싶습니다.
         </FadeInLetter>

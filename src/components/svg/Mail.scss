@@ -1,0 +1,52 @@
+span {
+}
+
+svg {
+  margin-right: 1rem;
+
+  display: inline;
+}
+
+line {
+  fill: none;
+  stroke: black;
+  stroke-width: 2px;
+  
+  animation: mail 0.33s ease-in-out both;
+
+  &:nth-child(1) {
+    stroke-dasharray: 0, 100;
+  }
+  &:nth-child(2) {
+    stroke-dasharray: 0, 100;
+  }
+
+  &:nth-child(3) {
+    stroke-dasharray: 0, 100;
+    animation-delay: 0.2s;
+  }
+  &:nth-child(4) {
+    stroke-dasharray: 0, 100;
+    animation-delay: 0.2s;
+  }
+
+  &:nth-child(5) {
+    stroke-dasharray: 0, 100;
+    animation: mail 0.2s ease-in-out both;
+
+    animation-delay: 0.5s;
+  }
+
+  &:nth-child(6) {
+    stroke-dasharray: 0, 100;
+    animation: mail 0.2s ease-in-out both;
+
+    animation-delay: 0.65s;
+  }
+}
+
+@keyframes mail {
+  100% {
+    stroke-dasharray: 100, 0;
+  }
+}

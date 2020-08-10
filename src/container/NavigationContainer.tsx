@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import NavButton from '../components/NavButton';
-import PlusXIcon from '../components/PlusXIcon';
+import NavButton from '../components/svg/NavButton';
+import PlusXIcon from '../components/svg/PlusXIcon';
 
 
 const NavBox = styled.div`

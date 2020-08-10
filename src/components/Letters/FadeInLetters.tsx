@@ -9,7 +9,7 @@ const LetterWrapper = styled.div<LetterWrapperProps>`
 
 width:100vw;
 height:75vh;
-font-size:1.5rem;
+font-size:1.66rem;
 text-align:center;
 opacity:0.1;
 transition:0.66s;
@@ -42,7 +42,11 @@ type MyProps = {
 
 const FadeInLetter: React.FunctionComponent<MyProps> = (props) => {
 
-    return <LetterWrapper className={props.animated ? "animated" : ""} background={props.background}>{props.children}</LetterWrapper>
+    return <LetterWrapper className={props.animated ? "animated" : ""} background={props.background}>
+         <div style={{display:"inline-block",textAlign:"left"}}>
+        {props.children}
+        </div>
+        </LetterWrapper>
 
 }
 
