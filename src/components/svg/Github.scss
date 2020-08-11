@@ -1,6 +1,6 @@
 
-.github{width:120px;
-height:120px;}
+.github{width:133px;
+height:133px;}
 
 path{
     fill:white;
@@ -20,7 +20,7 @@ path{
         stroke-dasharray: 0,100;
     }
     100%{
-        fill:black;
+        fill:none;
         stroke-dasharray: 100,0;
     }
 }

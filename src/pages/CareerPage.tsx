@@ -19,7 +19,7 @@ const Video=styled.video`
 const CareerPage = () => {
 
 
-  const [activated, setActivated] = useState([false, false, false, false]);
+  const [activated, setActivated] = useState([false, false, false, false,false]);
 
   const onScroll = () => {
     const y = window.scrollY;
@@ -103,7 +103,11 @@ const CareerPage = () => {
         <br /><br /> 혼자서 웹 개발을 1년 정도 하다가
         <br /><br />태양광 회사에서 프론트엔드 개발자로 약 2개월간 근무를 하였습니다.
       </FadeInLetters>
-
+      <FadeInLetters animated={activated[4]} background={""}>
+        <br/>
+        <br/>
+        <a href="http://www.sejong-yesterday.com" target="_blank" rel="noopener noreferrer">이전 포트폴리오 보기</a>
+      </FadeInLetters>
 
 
     </div>
