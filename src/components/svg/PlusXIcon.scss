@@ -7,7 +7,10 @@ $menuicon-height:10rem;
   width: $menuicon-width;
   height: $menuicon-height;
   position: relative;
-
+  @media (max-width:1024px){
+    width: $menuicon-width/2;
+    height: $menuicon-height/2;
+  }
   .icon {
     
     position: absolute;
@@ -19,6 +22,12 @@ $menuicon-height:10rem;
     width: $menuicon-width/2;
     height: $menuicon-height/20;
     
+    @media (max-width:1024px){
+      width: $menuicon-width/4;
+      height: $menuicon-height/40;
+    }
+    
+
     &:nth-child(1){
         transform: translate(-50%, -50%) rotate(90deg);
     }

@@ -11,26 +11,11 @@
 
   letter-spacing: normal;
 
-  // .input-line {
-  //   width: calc(100% - 50px);
-  //   margin-left: 25px;
-  //   height: 2px;
-
-    // path {
-    //   margin: 0;
-    //   stroke-width: 1.5px;
-    //   stroke: rgb(0, 0, 0);
-    //   opacity: 0.25;
-    //   transition: all 0.2s;
-    //   stroke-dasharray: 0, 20;
-    //   stroke-dashoffset: -20;
-
-    //   &.active {
-    //     opacity: 0.33;
-    //     stroke-dasharray: 40, 0;
-    //     stroke-dashoffset: 0;
-    //   }
-    // }
+  
+@media (max-width:1024px){
+  font-size: 3rem;
+}
+ 
   
   &.active {
     margin-left: 2rem;
@@ -47,8 +32,5 @@
   &.selected {
     color: black;
     letter-spacing: 2px;
-  }
-
-  &.unselected {
   }
 }

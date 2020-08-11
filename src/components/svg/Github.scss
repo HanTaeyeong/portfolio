@@ -1,0 +1,26 @@
+
+.github{width:120px;
+height:120px;}
+
+path{
+    fill:white;
+    stroke:black;
+    stroke-width:1px;
+    
+    stroke-dasharray: 0,100;
+    
+    animation:github 2.0s ease-in-out both;
+    
+}
+
+@keyframes github{
+    
+    0%{
+
+        stroke-dasharray: 0,100;
+    }
+    100%{
+        fill:black;
+        stroke-dasharray: 100,0;
+    }
+}

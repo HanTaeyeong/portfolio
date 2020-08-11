@@ -49,7 +49,7 @@ const StackPage = () => {
             상황에 따라 SCSS, CSS, styled-components를 사용합니다.
         </FadeInLetters >
 
-        <FadeInLetters animated={activated[1]}>
+        <FadeInLetters animated={activated[1]} background={"lightblue"}>
             Micro-Interaction에는 주로 svg와 css를
             <br /><br />적절히 결합한 애니메이션을 사용하며,
             <br /><br />

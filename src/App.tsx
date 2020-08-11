@@ -48,7 +48,7 @@ function App() {
   return (
     <BrowserRouter>
       <div className="App">
-        <Header>HanTaeyeong</Header>
+        <Header>Han Taeyeong</Header>
         <NavigationContainer active={active} toggleNavActive={toggleNavActive} />
         <PageContainer />
       </div>

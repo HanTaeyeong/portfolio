@@ -5,7 +5,7 @@ const Mail=()=>{
     
     return( 
    
-    <svg width="110" height="65">
+    <svg width="120" height="65">
         
             <line x1="2" y1="2" x2="102" y2="2"/>
             <line x1="2" y1="2" x2="2" y2="62"/>

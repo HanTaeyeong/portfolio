@@ -4,6 +4,15 @@ import styled from 'styled-components';
 
 
 
+const Video=styled.video`
+ cursor: pointer;
+
+ width:100%;
+  
+
+
+`;
+
 
 
 
@@ -36,7 +45,14 @@ const CareerPage = () => {
     };
 
   }, []);
+  
+  const onClickVideo=()=>{
+    window.open(
+      "https://store.steampowered.com/app/878300/RollTheEarth/",
+      '_blank' 
+    );
 
+  }
 
 
 
@@ -50,19 +66,19 @@ const CareerPage = () => {
         <br />
        2014년 처음으로 프로그래밍을 하겠다고 마음을 먹은 이후
          <br /><br />
-        공부를 시작하여 프로그래머의 삶을 살고 있습니다.
+       C로 처음 공부를 시작하여 프로그래머의 삶을 살고 있습니다.
 
 
       </FadeInLetters>
 
       <FadeInLetters animated={activated[1]}>
 
-        시작은 C와 Java C#을 거쳐 스팀에 게임을 개발하여 출시하였습니다.<br />
+        그후 자바와 Unity3D C#을 거쳐 스팀에 게임을 개발하여 출시하였습니다.<br />
         <br />
-        <video autoPlay={true} muted >
+        <Video autoPlay={true} muted onClick={onClickVideo} >
           <source src={"https://steamcdn-a.akamaihd.net/steam/apps/256722050/movie480.webm?t=1530941795"} type="video/mp4"></source>
           none
-        </video>
+        </Video>
 
       </FadeInLetters>
       <FadeInLetters animated={activated[2]}>
@@ -74,7 +90,7 @@ const CareerPage = () => {
          <br /><br />
           프로그래밍 대회에 여러 번 참가했습니다.
       </FadeInLetters>
-      <FadeInLetters animated={activated[3]}>
+      <FadeInLetters animated={activated[3]} background={"lightgreen"}>
         그 후 사용자들과 더 가깝고 개발자들간의 소통이 활발하며,<br /><br />
 
         계속 변화하고 발전하는 프론트엔드 분야가<br /><br />
