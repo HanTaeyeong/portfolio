@@ -8,8 +8,6 @@ const Video=styled.video`
  cursor: pointer;
 
  width:100%;
-  
-
 
 `;
 
