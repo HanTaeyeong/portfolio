@@ -10,9 +10,11 @@ import { BrowserRouter } from "react-router-dom";
 
 const Header = styled.div`
   width: 100%;
-  font-size: 3rem;
+  font-size: 4rem;
   display:block;
   margin: 2rem;
+  font-weight:600;
+
 `;
 
 function App() {

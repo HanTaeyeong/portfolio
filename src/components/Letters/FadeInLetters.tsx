@@ -7,15 +7,16 @@ type LetterWrapperProps = {
 
 const LetterWrapper = styled.div<LetterWrapperProps>`
 
+font-family:cutefont;
 width:100vw;
 height:75vh;
-font-size:1.66rem;
+font-size:2.66rem;
 text-align:center;
 opacity:0.1;
 transition:0.66s;
     
 @media (max-width:1024px){
-    font-size:1.33rem;
+    font-size:2rem;
     
 width:80vw;
 margin-left:5vw;
