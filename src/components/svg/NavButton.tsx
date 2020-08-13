@@ -8,7 +8,8 @@ const Nav = styled(Link)`
     display:block;
     width:23rem;
     text-align:left;
-    
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+
 
 `;
 
