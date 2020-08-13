@@ -16,11 +16,12 @@ opacity:0.1;
 transition:0.66s;
 overflow-x:hidden;
 flex-wrap:wrap;
+
 @media (max-width:1024px){
     font-size:2rem;
-    
 width:80vw;
 margin-left:5vw;
+
 }
 
 
@@ -31,21 +32,20 @@ margin-left:5vw;
     }
     
     &:before{
-        
-flex-wrap:wrap;
+        flex-wrap:wrap;
         position:absolute;
         content:"";
        width:130vw;
        height:75vh;
        background:${props => props.background};
+        
        z-index:-5;
        margin-left:-50%;
        opacity:0.8;
 
         
 @media (max-width:1024px){
-    
-margin-left:-5vw;
+    width:150vw;
 }
 
     }

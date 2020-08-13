@@ -18,9 +18,12 @@ width:48rem;
 height:30rem;
 @media (max-width:1024px){
     width:80%;
+    height:50%;
+
 }
 @media (max-width:768px){
     width:90%;
+    height:50%;
 }
 
 `;
@@ -40,6 +43,7 @@ const IntroPage = () => {
     const onScroll = () => {
         const y = window.scrollY;
         const h = window.innerHeight;
+        
 
         const pos = Math.round(y / (h * 0.7) + 1);
         //h*FadeInLetters's height;
