@@ -11,8 +11,12 @@ overflow-x:hidden;
 
 }
 
+body{
+  overflow-x:hidden;}
 
-
+  html{
+    overflow-x:hidden;
+  }
 
 .App-logo {
   height: 40vmin;

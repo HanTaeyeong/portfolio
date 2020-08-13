@@ -14,7 +14,8 @@ font-size:2.66rem;
 text-align:center;
 opacity:0.1;
 transition:0.66s;
-    
+overflow-x:hidden;
+
 @media (max-width:1024px){
     font-size:2rem;
     
@@ -30,6 +31,8 @@ margin-left:5vw;
     }
     
     &:before{
+        
+overflow-x:hidden;
         position:absolute;
         content:"";
        width:130vw;
