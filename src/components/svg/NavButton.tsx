@@ -8,6 +8,8 @@ const Nav = styled(Link)`
     display:block;
     width:23rem;
     text-align:left;
+    
+
 `;
 
 

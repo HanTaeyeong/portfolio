@@ -10,6 +10,17 @@ position:fixed;
 flex-direction:column;
 width:15rem;
 z-index:9;
+
+
+@media (max-width:1024px){
+    
+
+    &.active{
+        background:rgba(151, 151, 151, 0.95);
+}   
+
+}
+
 `;
 
 type NavContainerType={
@@ -22,7 +33,7 @@ const NavigationContainer = ({active,toggleNavActive}:NavContainerType) => {
     const [currentPage, setCurrentPage] = useState("intro");
 
 
-    return <NavBox>
+    return <NavBox className={active?"active":""}>
         <PlusXIcon active={active} onClickFunction={() => { toggleNavActive(); }} />
         <NavButton to="intro" active={active} selected={currentPage==="intro"} title="Intro" onClickFunction={() => setCurrentPage("intro")} />
         <NavButton to="stack" active={active} selected={currentPage==="stack"} title="Stack" onClickFunction={() => setCurrentPage("stack")} />

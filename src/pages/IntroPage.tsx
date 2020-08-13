@@ -16,6 +16,13 @@ const IntroWrapper = styled.div`
 const Image = styled.img`
 width:48rem;
 height:30rem;
+@media (max-width:1024px){
+    width:80%;
+}
+@media (max-width:768px){
+    width:90%;
+}
+
 `;
 
 

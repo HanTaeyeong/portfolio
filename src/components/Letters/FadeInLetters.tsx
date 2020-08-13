@@ -15,7 +15,7 @@ text-align:center;
 opacity:0.1;
 transition:0.66s;
 overflow-x:hidden;
-
+flex-wrap:wrap;
 @media (max-width:1024px){
     font-size:2rem;
     
@@ -32,7 +32,7 @@ margin-left:5vw;
     
     &:before{
         
-overflow-x:hidden;
+flex-wrap:wrap;
         position:absolute;
         content:"";
        width:130vw;
@@ -66,7 +66,10 @@ type MyProps = {
 const FadeInLetter: React.FunctionComponent<MyProps> = (props) => {
 
     return <LetterWrapper className={props.animated ? "animated" : ""} background={props.background}>
-        <div style={{ display: "inline-block", textAlign: "left" }}>
+        <div style={{
+            display: "inline-block", textAlign: "left", overflowX: "hidden",
+            flexWrap: "wrap"
+        }}>
             {props.children}
         </div>
     </LetterWrapper>
