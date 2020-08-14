@@ -14,7 +14,6 @@ z-index:9;
 
 @media (max-width:1024px){
     
-
     &.active{
         background:rgba(151, 151, 151, 0.95);
 }   

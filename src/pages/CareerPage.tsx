@@ -98,8 +98,7 @@ const CareerPage = () => {
         먹었습니다.
         <br /><br /> 최근 객체지향을 넘어 함수형 프로그래밍의 장점을 느끼고
         있습니다.
-        <br /><br /> 혼자서 웹 개발을 1년 정도 하다가
-        <br /><br />태양광 회사에서 프론트엔드 개발자로 약 2개월간 근무를 하였습니다.
+        <br /><br /> Vanilla JS 부터 시작하여 웹 개발을 시작 한지는 1년 정도 되었습니다.
       </FadeInLetters>
       <FadeInLetters animated={activated[4]} background={""}>
         <br/>
